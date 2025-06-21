@@ -2,9 +2,7 @@
 
 📄 **Detailed Article** → [Read the the full documentation here](https://jperezlafuente.github.io/FightClub-project/)
 
-## 📌 Context
-
-Teamfights are often the turning point in competitive League of Legends games. While we have access to second-by-second data from GRID, **knowing *when* a teamfight happens and *how* it plays out** is not straightforward. The goal of this project is to automatically identify and reconstruct teamfights using structured in-game data — and extract insights that help teams **understand and improve** their fight execution.
+The goal of this project is to automatically identify and reconstruct LOL teamfights using structured in-game data — and extract insights that help teams **understand and improve** their fight execution.
 
 ## 🎯 Goal
 
