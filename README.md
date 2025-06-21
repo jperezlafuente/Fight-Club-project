@@ -2,7 +2,7 @@
 
 📄 **Detailed Article** → [Read the the full documentation here](https://jperezlafuente.github.io/FightClub-project/)
 
-The goal of this project is to automatically identify and reconstruct LOL teamfights using structured in-game data — and extract insights that help teams **understand and improve** their fight execution.
+This project aims to automatically identify and reconstruct LOL teamfights using structured in-game data — and extract insights that help teams **understand and improve** their fight execution.
 
 ## 🎯 Goal
 
