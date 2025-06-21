@@ -32,8 +32,8 @@ This project uses second-by-second structured data from GRID for pro LoL matches
 
 ## 🧾 Available Resources
 
-- [**teamfights_data_pre.csv**](../data/teamfights_data_pre.csv) → GRID data in a second per second basis
-- [**teamfights_data_post.csv**](../data/teamfights_data_post.csv) → Dataset including final fights identified
+- `/data/teamfights_data_pre.csv` → GRID data in a second per second basis
+- `/data/teamfights_data_post.csv` → Dataset including final fights identified
 
 ## 📬 Feedback & Collaboration
 
