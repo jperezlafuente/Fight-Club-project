@@ -4,7 +4,8 @@
 
 Since teamfights often decide the outcome of games, understanding **how**, **when**, and **why** we win or lose them is crucial. This project aims to **automatically identify teamfights** in professional League of Legends matches using GRID data, and **extract actionable insights** to help teams **improve how they fight**. 
 
-Full project repo: XXXXXX
+Full project repo: [https://github.com/jperezlafuente/FightClub-project](https://github.com/jperezlafuente/FightClub-project)
+
 ---
 
 ## 🗂️ 1. Available Data
@@ -44,9 +45,7 @@ Summing things up, my approach is to start from easy-to-identify spikes in damag
 
 ## 🧠 3. Types of Fights
 
-Not all fights are created equal.
-
-Once we identify all combat windows, we need to **classify them**:
+From previous step we now have a lot of unique fighting events. All of them are based on timeframes and positions, but we also have things like number of players involved, amount of damage dealt, kills-deaths-assists, gold differences and more. So once we identify all combat windows, we need to use this info to **classify them**. For example, we could find types like:
 
 | Type         | Description                             |
 |--------------|-----------------------------------------|
@@ -55,35 +54,35 @@ Once we identify all combat windows, we need to **classify them**:
 | 🔄 Trades     | Lane trades or jungle duels             |
 | 🧨 Teamfights | 4v4, 5v5 or more, with clear objectives |
 
-For this project, we filter out everything except **true teamfights**, as these are the ones that reveal most about **team coordination, execution, and decision-making**.
+For this project, we filter out everything except **true teamfights**, as these are the ones we will focus. Again, we will need to set some thresholds to delimitate them. My decision was to relay mainly on: **minimum number of players involved, damage dealt as a percentage of total health in game** and, also, **kills**. 
 
 ## 📊 4. Delivered Analysis
 
 Once we’ve got our teamfights, we can start digging into questions like:
 
 - 🥇 **Are we winning or losing fights overall?**
-- 🧭 **How well do we set up beforehand?**
-- 🧨 **Who’s engaging and how?**
-- 🧯 **How do we use key abilities and summoners?**
+- 🧭 **Do we perform better/worst teamfights in mid game or in late game?**
+- 🛠️ **How well do we set up beforehand?**
 - 🎯 **Are we focusing the right targets?**
 - ⏱️ **Are we fighting at good timings (tempo, respawn windows)?**
 
-These insights can help coaches and analysts **turn chaotic fights into structured decisions** — with real impact on team performance.
+These insights can help coaches and analysts **turn chaotic fights into structured decisions** — with real impact on team performance. Each of them could properly have its own specific post so I won't detail them at the moment. But one thing to note is that **only identifying teamfights is useful enough for coaches and analysts because of the time saving we are delivering**. And this is even more important if you take into account that some of the things you would want to look in teamfights are not really easy to objectively analyse (for example: shotcalling, spell combos and priorities...), so personal analysis should appear at some point anyway. But here we can set some valuable guidelines and shortcuts for them. 
 
-## 📬 5. Feedback & Next Steps
+## 📊 Sample Data
 
-This is just the first iteration — we’d love to hear your ideas!
+In the repository of the project you can find an example from 5 Spanish ERL1 matches so that you can better understand the data available to do this analysis. In addition, I've added the sample result from this approach to identify fights from those matches.
 
-- What kind of **visualizations or dashboards** would help most?
-- Should we analyze **individual roles**, or focus on **team-level patterns**?
-- Would you want to compare across **teams or regions**?
+- [**teamfights_data_pre.csv**](../data/teamfights_data_pre.csv) → CSV containing selected GRID data from those matches in a second per second basis.
+- [**teamfights_data_post.csv**](../data/teamfights_data_post.csv) → CSV containing final fights identified according to this process and my temporal/spatial thresholds.
 
-👂 Any suggestions or questions? **Reach out or open an issue!** This is an ongoing project, and your input makes it better.
+## 📬 Feedback & Next Steps
 
-## 🏁 Closing
+I invite the community to explore the results and help find new ways to leverage this data. Some possible areas of interest include:
+- **Improving any step from the process**, specially setting solid thresholds to determine whether a player is a real part of the fight or not.
+- **Determine solid criteria to clasify more fighting types apart from teamfights**
+- **Suggest and develop any KPI/insights from this data**
 
-Teamfights are some of the **most exciting and decisive** moments in League of Legends.
-
-This project aims to make them **measurable, understandable, and improvable** — not just for fans, but for those working to compete at the highest level.
+## 📢 Contact & Contributions
+This project is shared for analytical and discussion purposes. If you have insights or ideas to expand the analysis, feel free to open a discussion or reach out ([Twitter: @jperezlafuente](https://twitter.com/jperezlafuente), [email](mailto:jperezlafuente@hotmail.com))!
 
 ---
