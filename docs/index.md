@@ -85,4 +85,8 @@ I invite the community to explore the results and help find new ways to leverage
 ## 📢 Contact & Contributions
 This project is shared for analytical and discussion purposes. If you have insights or ideas to expand the analysis, feel free to open a discussion or reach out ([Twitter: @jperezlafuente](https://twitter.com/jperezlafuente), [email](mailto:jperezlafuente@hotmail.com))!
 
+Even though I shared the complete logic detail of the process, I had not shared the exact thresholds and ways of using the variables available to create fighting events for competitive reasons. Nevertheless, I'm open to talk directly to anyone interested in these type of details and help them to recreate this kind of result.
+
+Finally, I would like to thank my actual coaching staff in ZETA, Sangui and Inori, for suggesting this analysis, checking my results and giving me the freedom to explore new things like this.
+
 ---
