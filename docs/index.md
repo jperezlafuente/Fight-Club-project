@@ -72,8 +72,8 @@ These insights can help coaches and analysts **turn chaotic fights into structur
 
 In the repository of the project you can find an example from 5 Spanish ERL1 matches so that you can better understand the data available to do this analysis. In addition, I've added the sample result from this approach to identify fights from those matches.
 
-- [**teamfights_data_pre.csv**](/data/teamfights_data_pre.csv) → CSV containing selected GRID data from those matches in a second per second basis.
-- [**teamfights_data_post.csv**](/data/teamfights_data_post.csv) → CSV containing final fights identified according to this process and my temporal/spatial thresholds.
+- [**teamfights_data_pre.csv**](https://github.com/jperezlafuente/FightClub-project/raw/main/data/teamfights_data_pre.csv) → CSV containing selected GRID data from those matches in a second per second basis.
+- [**teamfights_data_post.csv**](https://github.com/jperezlafuente/FightClub-project/raw/main/data/teamfights_data_post.csv) → CSV containing final fights identified according to this process and my temporal/spatial thresholds.
 
 ## 📬 Feedback & Next Steps
 
